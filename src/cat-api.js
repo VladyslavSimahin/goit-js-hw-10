@@ -29,5 +29,4 @@ function fetchCatByBreed(breedId) {
     return resp.json();
   });
 }
-
 export { fetchBreeds, fetchCatByBreed };

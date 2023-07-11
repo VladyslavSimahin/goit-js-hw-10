@@ -18,8 +18,10 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
+    "@mojs/core": "^1.5.1",
     "modern-normalize": "^1.1.0",
     "notiflix": "^3.2.6",
+    "randomcolor": "^0.6.2",
     "slim-select": "^2.6.0"
   },
   "devDependencies": {

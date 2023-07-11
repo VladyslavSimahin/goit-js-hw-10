@@ -61,6 +61,7 @@ function createOptions() {
         'Something went wrong! Try reloading the page!',
         'Ok'
       );
+      error();
     })
     .finally(() => {
       refs.error.hidden = true;
@@ -74,11 +75,11 @@ function createMarkup(array) {
   return array
     .map(({ url, breeds: [{ description, name, temperament }] }) => {
       return `<img src="${url}" alt="${name}" width="400"/>
-    <h2>${name}</h2>
-    <h3>Description</h3>
-    <p class="descr">${description}</p>
-    <h3>Temperament</h3>
-    <p class="temperament">${temperament}</p>`;
+    <h2 class="anime">${name}</h2>
+    <h3 class="anime">Description</h3>
+    <p class="descr anime">${description}</p>
+    <h3 class="anime">Temperament</h3>
+    <p class="temperament anime">${temperament}</p>`;
     })
     .join('');
 }
